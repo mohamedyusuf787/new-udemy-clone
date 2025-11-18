@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-h1{
+
+h1 {
     margin-bottom: 10px;
 }
 
-.navbar{
+.navbar {
     position: sticky;
     top: 0%;
     z-index: 10;
@@ -18,15 +19,15 @@ h1{
     width: 100%;
     gap: 4px;
     padding: 8px;
-    border-bottom:1px solid black ;
+    border-bottom: 1px solid black;
     background-color: white;
 }
 
-.navbar__logo{
+.navbar__logo {
     color: rgb(179, 97, 255);
 }
 
-.navbar__searchbar{
+.navbar__searchbar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,25 +39,27 @@ h1{
     gap: 4px;
 }
 
-.navbar__searchbar input{
+.navbar__searchbar input {
     border: none;
     width: 100%;
 }
-.navbar__searchbar input:focus{
+
+.navbar__searchbar input:focus {
     outline: none;
 }
 
-.nabar__s3{
+.navbar__s3 {
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center;
 }
 
-.my-learning{
+.my-learning {
     position: relative;
 }
-.my-learning__popup{
+
+.my-learning__popup {
     position: absolute;
     top: 150%;
     right: 0%;
@@ -67,17 +70,20 @@ h1{
     padding: 8px;
     display: none;
 }
-.my-learning{
+
+.my-learning {
     cursor: pointer;
 }
 
-.my-learning:hover .my-learning__popup{
+.my-learning:hover .my-learning__popup {
     display: block;
 }
-.fa-bell{
+
+.fa-bell {
     position: relative;
 }
-.msg{
+
+.msg {
     position: absolute;
     top: -5px;
     right: -7px;
@@ -87,103 +93,123 @@ h1{
     background-color: red;
     color: white;
 }
+.navbar__s4{
+    display: none;
+    cursor: pointer;
+}
 
-.categories{
+.categories {
     display: flex;
     justify-content: space-around;
     padding: 8px;
     /* border-bottom: 1px solid black; */
 }
-.categories p{
+
+.categories p {
     background-color: blueviolet;
     color: white;
     padding: 8px 12px;
     border-radius: 30px;
-  transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
-.categories p:hover{
+
+.categories p:hover {
     transform: scale(1.1);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 /* .landing-page{
     display: flex;
     width: 100%;
     background-color: #A435F0;
 } */
 
-.landing-page{
+.landing-page {
     position: relative;
 }
-.content-box{
+
+.content-box {
     position: absolute;
     top: 30%;
     left: 80px;
     padding: 10px;
+    gap: 40px;
     background-color: white;
     border: 1px solid black;
     border-radius: 16px;
-    width: 500px;
-    height: 150px;
+    width: 40%;
+    height: 40%;
     animation: contentcardslide 2s ease-out;
     animation-fill-mode: forwards;
 }
+
 @keyframes contentcardslide {
-    0%{
+    0% {
         margin-left: -500px;
     }
-    100%{
+
+    100% {
         margin-left: 0px;
     }
-    
+
 }
-.landing-page img{
+
+.landing-page img {
     justify-content: center;
     width: 100%;
     height: auto;
 }
 
-.recommendation{
+.recommendation {
     margin-top: 80px;
     padding: 20px;
 }
-.recommendation__cards{
+
+.recommendation__cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
     /* margin-top: 10px; */
 }
-.recommendation__card{
-    flex-grow: 1;
-    width: 250px;
+
+.recommendation__card {
+    /* flex-grow: 1; */
+    width: 280px;
     padding: 10px;
     margin-top: 20px;
     background-color: black;
     color: white;
-    
-  transition: transform .2s; /* Animation */
+
+    transition: transform .2s;
+    /* Animation */
 }
 
-.recommendation__card:hover{
+.recommendation__card:hover {
     transform: scale(1.1);
     filter: drop-shadow(3px 3px 20px black);
-    
+
 }
-.recommendation__card img{
+
+.recommendation__card img {
     width: 100%;
-    
+
 }
+
 /* .recommendation__card-title{
     margin-bottom: 10px;
 } */
- .recommendation__card-author{
+.recommendation__card-author {
     color: grey;
- }
- .price{
+}
+
+.price {
     margin-top: 8px;
- }
-.button{
+}
+
+.button {
     width: 100%;
     margin-top: 8px;
     font-weight: bold;
@@ -194,21 +220,24 @@ h1{
     background-color: blueviolet;
     color: white;
 }
-.button:hover{
-    background-color:#7a02ad;
+
+.button:hover {
+    background-color: #7a02ad;
 }
 
-.topics{
+.topics {
     margin-top: 80px;
     padding: 20px;
 }
-.topics__container{
+
+.topics__container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
     gap: 10px;
 }
-.topics__container p{
+
+.topics__container p {
     flex-grow: 1;
     flex-basis: 25%;
     border: 1px solid grey;
@@ -216,12 +245,12 @@ h1{
     gap: 10x;
 }
 
-.popular_courses{
+.popular_courses {
     padding: 20px;
 }
 
 /* footer */
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
@@ -229,18 +258,76 @@ h1{
     background-color: black;
     color: white;
 }
-.footer__s1{
+
+.footer__s1 {
     display: flex;
 }
-.footer__s1 p{
+
+.footer p {
     padding: 10px;
+    cursor: pointer;
 }
-.footer__s2{
+
+.footer__s2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 5px;
 }
-.footer__s2-logo{
+
+.footer__s2-logo {
     color: rgb(179, 97, 255);
+}
+
+/* media query for 800px */
+
+@media screen and (max-width:1100px) {
+    .recommendation__card {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .content-box {
+        height: auto;
+    }
+    .recommendation__cards{
+        gap: 10px;
+    }
+    .recommendation__card {
+        justify-content: center;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    body{
+        font-size: 12px;
+    }
+     .navbar__s3, .navbar__searchbar, .categories{
+        display: none;
+    }
+     .navbar__s4{
+    display: block;
+    cursor: pointer;
+     }
+    .content-box {
+        top: 20%;
+        height: auto;
+    }
+    .recommendation__cards{
+        gap: 10px;
+    }
+
+    .recommendation__card {
+        width: 250px;
+        margin-top: 10px;
+    }
+    .topics__container p{
+        flex-basis: 2%;
+    }
+}
+
+@media screen and (max-width:520px) {
+   
 }
